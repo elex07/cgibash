@@ -33,6 +33,7 @@ apache2 or httpd installation required.
 sudo a2enmod cgi
 ```
 (**a2enmod** does not work in httpd. The modules cgi is enabled by default. If it is not enabled, you need to check the following line is uncommented in **/etc/httpd/conf/httpd.conf**
+
 **LoadModule cgi_module modules/mod_cgi.so** )
 
 6. Restart apache2 or httpd
