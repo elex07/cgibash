@@ -1,6 +1,7 @@
 
-**Prerequisites** :
-apache2 or httpd installation required.
+**Prerequisites** :  
+a) apache2 or httpd installation   
+b) sqlite3 installation   
 
 **Set-Up Project** :
 
