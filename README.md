@@ -1,12 +1,12 @@
 
-Prerequisites :
+**Prerequisites** :
 apache2 or httpd installation required.
 
-Set-Up Project :
+**Set-Up Project** :
 
-1. Clone the repository and copy project folder cgibash in /var/www/html.
+1. Clone the repository and copy project folder cgibash in **/var/www/html**.
 
-2. Configure Virtualhost in /etc/apache2/sites-enabled/000-default.conf or /etc/httpd/conf/httpd.conf
+2. Configure Virtualhost in **/etc/apache2/sites-enabled/000-default.conf** or **/etc/httpd/conf/httpd.conf**
 ```
 <VirtualHost *:80>
 	ServerAdmin webmaster@localhost
@@ -14,7 +14,7 @@ Set-Up Project :
         ServerName cgibash
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
-####To make apache execute cgibash script
+#### To make apache2/httpd execute cgi-bash scripts
 <Directory "/var/www/html/test/cgibash">
     Options +ExecCGI
     AddHandler cgi-script .sh
@@ -23,7 +23,7 @@ Set-Up Project :
 </VirtualHost>
 ```
 
-3. Add the line in /etc/hosts file
+3. Add the line in **/etc/hosts** file
 ```
 127.0.0.1 cgibash
 ```
@@ -32,8 +32,8 @@ Set-Up Project :
 ```
 sudo a2enmod cgi
 ```
-(a2enmod does not work in httpd. It is enabled by default. If not check the following line is cuncommented in /etc/httpd/conf/httpd.conf
-LoadModule cgi_module modules/mod_cgi.so )
+(**a2enmod** does not work in httpd. The modules cgi is enabled by default. If it is not enabled, you need to check the following line is uncommented in **/etc/httpd/conf/httpd.conf**
+**LoadModule cgi_module modules/mod_cgi.so** )
 
 6. Restart apache2 or httpd
 ```
