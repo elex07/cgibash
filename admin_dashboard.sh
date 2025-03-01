@@ -14,11 +14,25 @@ if [ -f "$SESSION_FILE" ]; then
     ROLE=$(grep 'role=' "$SESSION_FILE" | cut -d'=' -f2)
 
     if [ "$ROLE" == "admin" ]; then
-        echo "<html><body><h1>Welcome, Admin $USERNAME!</h1></body></html>"
+   	echo "<html><head><link rel='stylesheet' href='styles.css'></head><body>"
+	echo "<div class='container'>"
+        echo "<html><body><h1>Welcome, Admin</h1> <h3>(username : $USERNAME)</h3></body></html>"
+        echo "<nav><a href='manage_users.sh'>Manage Users</a> | <a href='logout.sh'>Logout</a></nav>"
+	echo "</div>"
+	echo "</body></html>"
+
     else
+       	echo "<html><head><link rel='stylesheet' href='styles.css'></head><body>"
+	echo "<div class='container'>"
         echo "<html><body><h1>Access Denied</h1></body></html>"
+        echo "</div>"
+	echo "</body></html>"
     fi
 else
-    echo "<html><body><h1>Session Expired. Please <a href='login.html'>login</a> again.</h1></body></html>"
+    	echo "<html><head><link rel='stylesheet' href='styles.css'></head><body>"
+    	echo "<div class='container'>"
+    	echo "<html><body><h1>Session Expired. Please <a href='login.html'>login</a> again.</h1></body></html>"
+    	echo "</div>"
+    	echo "</body></html>"
 fi
 

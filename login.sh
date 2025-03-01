@@ -47,8 +47,12 @@ if [ -n "$USER_INFO" ]; then
     fi
     echo ""
 else
-    echo ""
-    echo "<html><body><h1>Invalid credentials</h1></body></html>"
+       	echo "<html><head><link rel='stylesheet' href='styles.css'></head><body>"
+	echo "<div class='container'>"
+        echo "<html><body><h1>Invalid credentials</h1></body></html>"
+        echo "</div>"
+	echo "</body></html>"
+
 fi
 
 
