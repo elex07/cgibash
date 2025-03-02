@@ -14,8 +14,8 @@ Admin Login :
 username : admin   
 password : admin   
    
-**-- Pavitra Kanetkar**
-##############################################
+**-- Pavitra Kanetkar**   
+##############################################   
 **Prerequisites** :  
 a) apache2 or httpd installation   
 b) sqlite3 installation   
