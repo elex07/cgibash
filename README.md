@@ -1,4 +1,5 @@
-### Description ###
+### Description ###   
+A CGI Shell Script (BASH) Web Application   
 cgibash is an html and shell script based web application where shell script is used as a backend scripting.   
 The main purpose of the project is to use cgi module of the apache and implement role based logins.   
    
