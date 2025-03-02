@@ -1,3 +1,4 @@
+### Description ###
 cgibash is an html and shell script based web application where shell script is used as a backend scripting.   
 The main purpose of the project is to use cgi module of the apache and implement role based logins.   
    
@@ -13,14 +14,13 @@ Admin Login :
 username : admin   
 password : admin   
    
-**Pavitra Kanetkar88
-
+**-- Pavitra Kanetkar**
+##############################################
 **Prerequisites** :  
 a) apache2 or httpd installation   
 b) sqlite3 installation   
 
-**Set-Up Project** :
-
+**Set-Up Project** :   
 1. Clone the repository and copy project folder cgibash in **/var/www/html**.
 
 2. Configure Virtualhost in **/etc/apache2/sites-enabled/000-default.conf** or **/etc/httpd/conf/httpd.conf**
@@ -49,8 +49,7 @@ b) sqlite3 installation
 ```
 sudo a2enmod cgi
 ```
-(**a2enmod** does not work in httpd. The modules cgi is enabled by default. If it is not enabled, you need to check the following line is uncommented in **/etc/httpd/conf/httpd.conf**
-
+(**a2enmod** does not work in httpd. The modules cgi is enabled by default. If it is not enabled, you need to check the following line is uncommented in **/etc/httpd/conf/httpd.conf**   
 **LoadModule cgi_module modules/mod_cgi.so** )
 
 6. Restart apache2 or httpd
