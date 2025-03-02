@@ -1,3 +1,19 @@
+cgibash is an html and shell script based web application where shell script is used as a backend scripting.   
+The main purpose of the project is to use cgi module of the apache and implement role based logins.   
+   
+There are two roles implemented in the application i.e. user and admin. It creates separate sessions for separate users.   
+   
+Login Details :   
+http://cgibash/login.html   
+User Login   
+username : user1   
+password : user1   
+   
+Admin Login :   
+username : admin   
+password : admin   
+   
+**Pavitra Kanetkar88
 
 **Prerequisites** :  
 a) apache2 or httpd installation   
